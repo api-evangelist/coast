@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.coastpay.com/
+versioning:
+  scheme: uri-path
+  current: v2
+  docs: https://docs.coastpay.com/openapi/v2/coast-api
+  evidence: API reference is served at /openapi/v2/coast-api (v2 in the URI path)
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation or Sunset (RFC 8594) policy located; developer docs are OIDC-gated.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.coastpay.com/
+status_page_provider: Atlassian Statuspage
+status_components:
+- Authorizations
+- Management Portal
+- Mobile App
+- Texting Service
+- API
+deprecated_operations: []
+notes: >-
+  Coast publishes an Atlassian Statuspage covering five services including a
+  dedicated API component. No public versioning/deprecation policy page was
+  found because the developer documentation (docs.coastpay.com) requires an OIDC
+  login.

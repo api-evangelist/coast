@@ -1,8 +1,16 @@
 aid: coast
 name: Coast
-description: 'Coast is a company surfaced as a portfolio company of accel, iconiq-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: payments. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Coast is a fintech company providing a unified payments platform for
+  fleet-based and field-service businesses, combining a smart Visa fuel card,
+  corporate card, field card, and bill pay into a single program with granular
+  spending controls, GPS- and tank-capacity-based fraud prevention, fuel
+  rebates, and a fraud guarantee. Coast operates a stable v2 REST API (the Coast
+  API) behind a developer portal that lets businesses programmatically access
+  cards, drivers, vehicles, transactions, receipts, and controls, alongside
+  native integrations with telematics (Samsara, Geotab, Verizon Connect),
+  accounting (QuickBooks, NetSuite, Sage Intacct), and fleet management
+  (Fleetio, Whip Around) platforms. Coast is backed by Accel and ICONIQ Capital.
 url: https://raw.githubusercontent.com/api-evangelist/coast/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +19,50 @@ x-backed-by:
 - iconiq-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Payments
-apis: []
+- Fintech
+- Fleet
+- Fuel Cards
+- Corporate Cards
+- Expense Management
+- Bill Pay
+image: https://coastpay.com/og.png
+apis:
+- name: Coast API
+  description: >-
+    Coast's stable v2 REST API for programmatic access to fleet and fuel expense
+    data — cards, drivers, vehicles, transactions, receipts, and spending
+    controls. The API reference is served via a gated (OIDC login) developer
+    portal; access is provisioned to Coast customers and partners.
+  humanURL: https://docs.coastpay.com/
+  baseURL: https://api.coastpay.com/
+  tags:
+  - Payments
+  - Fleet
+  - Fuel Cards
+  properties:
+  - type: Documentation
+    url: https://docs.coastpay.com/
+  - type: APIReference
+    url: https://docs.coastpay.com/openapi/v2/coast-api
+  - type: DeveloperPortal
+    url: https://developers.coastpay.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +71,38 @@ maintainers:
 common:
 - type: Website
   url: https://coastpay.com/
+- type: DeveloperPortal
+  url: https://developers.coastpay.com/
+- type: Documentation
+  url: https://docs.coastpay.com/
+- type: APIReference
+  url: https://docs.coastpay.com/openapi/v2/coast-api
+- type: Integrations
+  url: https://coastpay.com/integrations/
+- type: Support
+  url: https://coastpay.com/customer-service/
+- type: HelpCenter
+  url: https://coastpay.com/faqs/
+- type: Blog
+  url: https://coastpay.com/resources/blog/
+- type: Pricing
+  url: https://coastpay.com/pricing/
+- type: SignUp
+  url: https://apply.coastpay.com/
+- type: Login
+  url: https://portal.coastpay.com/auth
+- type: TermsOfService
+  url: https://coastpay.com/legal/terms-of-use/
+- type: PrivacyPolicy
+  url: https://coastpay.com/legal/privacy-policy/
+- type: StatusPage
+  url: https://status.coastpay.com/
+- type: Lifecycle
+  url: lifecycle/coast-lifecycle.yml
+- type: DomainSecurity
+  url: security/coast-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
