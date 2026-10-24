@@ -48,6 +48,15 @@ tags:
 - Company
 - Payments
 - Fintech
+- Fleet Management
+- Fuel Cards
+- Corporate Cards
+- Expense Management
+- Bill Pay
+tags_raw:
+- Company
+- Payments
+- Fintech
 - Fleet
 - Fuel Cards
 - Corporate Cards
@@ -64,6 +73,10 @@ apis:
   humanURL: https://docs.coastpay.com/
   baseURL: https://api.coastpay.com/
   tags:
+  - Payments
+  - Fleet Management
+  - Fuel Cards
+  tags_raw:
   - Payments
   - Fleet
   - Fuel Cards
